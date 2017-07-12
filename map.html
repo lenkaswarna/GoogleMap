@@ -1,0 +1,19 @@
+<html>
+    <head>
+     <title>Weathermap</title>
+  <link rel="stylesheet" href="mapcss.css"/>
+  <script src="mapjs.js"></script>
+    </head>
+    <body>
+    <input id="pac-input" class="controls"  type="text"
+        placeholder="Enter a location">
+    <div id="map"></div>
+    <div id="infowindow-content">
+      Place Name :<span id="place-name" class="title"></span><br>
+      Temp :<span  id="place-temp"></span>*c<br>
+      Wind Speed :  <span id="place-wspeed"></span>kph <br>
+      Weather:  <span id="place-description"></span> <br>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7wqjISIYsEYLrqSvj6lAGC7BuPK_hNkA&libraries=places&callback=myMap"></script>
+  </body>
+</html>
